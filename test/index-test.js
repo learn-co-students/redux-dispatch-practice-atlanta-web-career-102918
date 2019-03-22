@@ -4,6 +4,13 @@ import sinon from 'sinon';
 
 describe('managePets reducer', function() {
 
+  // describe('managePets reducer', function(){
+  //   it('returns the existing state if their action type doesnt match a type in the reducer', function() {
+  //     let state= {pets:[name: 'Splash', type: 'turtle', id:100}]}
+  //     expect(managePets(state, {type: 'Random action type'})).toEqual(state)
+  //   })
+  // })
+
   it("returns the existing state if there action's type doesn't match a type in the reducer", function() {
     let state = {pets: [{name: 'Splash', type: 'turtle', id: 100}]}
     expect(managePets(state, {type: 'Random Action Type'})).toEqual(state);
